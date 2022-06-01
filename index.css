@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 50px;
+    text-align: center;
+}
+
+nav {
+    /*Esto ayuda a poner los elementos en fila, uno al lado del otro.*/
+    display: flex;
+    flex-direction: row;
+    /**/
+
+    background-color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+     
+    padding: 14px 20px;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+/*Comenzando a usar FLEX BOX CSS.*/
+.row {
+    /*Esto ayuda a poner los elementos en fila, uno al lado del otro.*/
+    display: flex;
+    flex-direction: row;
+    /**/
+
+    flex-wrap: wrap;
+}
+
+.row aside {
+
+    /*Este elemento de la fila contendrá 10% de ancho.*/
+    flex: 10%;
+    
+    background-color: beige;
+    padding: 20px;
+}
+
+.row section {
+
+    /*Este elemento de la fila contendrá 70% de ancho. Lo que sobra CREO que se llena solito.*/
+    flex: 70%;
+
+    background-color: khaki;
+    padding: 20px;
+}
+
+footer {
+    background-color: palevioletred;
+    padding: 60px;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+
+    nav {
+        /*Cambiando las posiciones en fila a columna.*/
+        flex-direction: column;
+    }
+}

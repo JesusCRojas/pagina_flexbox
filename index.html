@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página web con Flexbox CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+    <header>
+        <h1>Mi página web</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Contacto</a>
+        <a href="#">Sobre mí</a>
+    </nav>
+
+    <!--El aside y el section están dentro esta clase llamada row (fila), pues, ambas estarán posicionadas en fila usando Flexbox CSS.-->
+    <div class="row">
+        <aside>
+            <h2>Aside (10% de ancho) - flex: 10%; </h2>
+            <p>l Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera 
+            para permitir la presentación de elementos gráficos en documentos, sin necesidad de una 
+            copia formal. El uso de Lorem Ipsum permite a los diseñadores reunir los diseños y la forma 
+            del contenido antes de que el contenido se haya creado, dando al diseño y al proceso de 
+            producción más libertad.</p>
+        </aside>
+    
+        <section>
+            <h2>Section (70% de ancho) - flex: 70%;</h2>
+            <p>l Lorem Ipsum fue concebido como un texto de relleno, formateado de una cierta manera 
+            para permitir la presentación de elementos gráficos en documentos, sin necesidad de una 
+            copia formal. El uso de Lorem Ipsum permite a los diseñadores reunir los diseños y la forma 
+            del contenido antes de que el contenido se haya creado, dando al diseño y al proceso de 
+            producción más libertad.</p>
+        </section>
+    </div>
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+
+</body>
+</html>
